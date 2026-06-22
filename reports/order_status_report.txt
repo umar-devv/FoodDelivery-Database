@@ -1,0 +1,14 @@
+==================== ORDER STATUS REPORT ====================
+
+Total Orders: 10
+
+Status Breakdown:
+- Delivered: 7 orders
+- Preparing: 2 orders
+- Out for Delivery: 1 order
+- Cancelled: 0 orders
+
+Revenue by Status:
+- Delivered: Rs.5500.0
+- Preparing: Rs.3550.0
+- Out for Delivery: Rs.495.0

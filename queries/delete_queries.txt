@@ -1,0 +1,10 @@
+==================== DELETE QUERIES ====================
+
+1. Delete a customer by ID:
+   db.Customers.deleteOne({ "customer_id": "CUST005" })
+
+2. Delete all cancelled orders:
+   db.Orders.deleteMany({ "status": "Cancelled" })
+
+3. Delete an unavailable menu item:
+   db.MenuItems.deleteOne({ "item_id": "ITEM008" })

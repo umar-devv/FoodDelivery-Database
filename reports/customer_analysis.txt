@@ -1,0 +1,18 @@
+==================== CUSTOMER ANALYSIS ====================
+
+Total Customers: 10
+
+Top Spenders:
+1. Umar Farooq: Rs.7200.0
+2. Bilal Ahmed: Rs.6200.0
+3. Hamza Abbas: Rs.5100.0
+4. Ali Khan: Rs.4500.0
+5. Usman Sheikh: Rs.3200.0
+
+Customers by City:
+- Lahore: 3 customers
+- Karachi: 3 customers
+- Islamabad: 2 customers
+- Rawalpindi: 1 customer
+- Faisalabad: 1 customer
+- Multan: 1 customer

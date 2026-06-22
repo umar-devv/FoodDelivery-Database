@@ -363,7 +363,6 @@ FoodDelivery-Database/
 │   ├── restaurant_analysis.txt
 │   └── order_status_report.txt
 │
-├── screenshots/
 │
 ├── documentation/
 │   └── project_documentation.pdf

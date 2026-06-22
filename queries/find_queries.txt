@@ -1,1 +1,16 @@
+==================== FIND QUERIES ====================
 
+1. Find all customers from Lahore:
+   db.Customers.find({ "city": "Lahore" })
+
+2. Find all restaurants with rating greater than 4.5:
+   db.Restaurants.find({ "rating": { $gt: 4.5 } })
+
+3. Find all available riders:
+   db.Riders.find({ "status": "Available" })
+
+4. Find all delivered orders:
+   db.Orders.find({ "status": "Delivered" })
+
+5. Find all menu items available:
+   db.MenuItems.find({ "available": true })

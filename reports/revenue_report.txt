@@ -1,0 +1,14 @@
+==================== REVENUE REPORT ====================
+
+Total Revenue from Delivered Orders: Rs.5500.0
+
+Breakdown by Restaurant:
+- Tasty Bites: Rs.1000.0
+- Pizza Paradise: Rs.1490.0
+- Spice Garden: Rs.0.0
+- Biryani House: Rs.725.0
+- Burger Hub: Rs.780.0
+- Sushi Spot: Rs.970.0
+- Desi Dhaba: Rs.535.0
+
+Generated on: 2026-06-22

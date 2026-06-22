@@ -1,0 +1,13 @@
+==================== RESTAURANT ANALYSIS ====================
+
+Total Restaurants: 10
+
+Highest Rated Restaurants:
+1. Steak House: 4.9
+2. Biryani House: 4.8
+3. Spice Garden: 4.7
+4. Desi Dhaba: 4.6
+5. Tasty Bites: 4.5
+
+Open Restaurants: 9
+Closed Restaurants: 1

@@ -1,0 +1,239 @@
+[{
+  "_id": {
+    "$oid": "6a37dfea8d4b3a3d7cf27aad"
+  },
+  "order_id": "ORD001",
+  "customer_name": "Ali Khan",
+  "customer_email": "ali.khan@gmail.com",
+  "restaurant_name": "Tasty Bites",
+  "items": [
+    "Chicken Biryani"
+  ],
+  "quantities": [
+    1
+  ],
+  "item_prices": [
+    350
+  ],
+  "subtotal": 350,
+  "delivery_fee": 50,
+  "grand_total": 400,
+  "status": "Delivered",
+  "order_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37dff58d4b3a3d7cf27aaf"
+  },
+  "order_id": "ORD002",
+  "customer_name": "Ayesha Malik",
+  "customer_email": "ayesha.malik@gmail.com",
+  "restaurant_name": "Pizza Paradise",
+  "items": [
+    "Margherita Pizza",
+    "Pepperoni Pizza"
+  ],
+  "quantities": [
+    1,
+    1
+  ],
+  "item_prices": [
+    600,
+    850
+  ],
+  "subtotal": 1450,
+  "delivery_fee": 40,
+  "grand_total": 1490,
+  "status": "Delivered",
+  "order_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e0218d4b3a3d7cf27ab3"
+  },
+  "order_id": "ORD003",
+  "customer_name": "Bilal Ahmed",
+  "customer_email": "bilal.ahmed@gmail.com",
+  "restaurant_name": "Spice Garden",
+  "items": [
+    "Butter Chicken",
+    "Naan Bread"
+  ],
+  "quantities": [
+    1,
+    2
+  ],
+  "item_prices": [
+    750,
+    80
+  ],
+  "subtotal": 910,
+  "delivery_fee": 60,
+  "grand_total": 970,
+  "status": "Preparing",
+  "order_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e02d8d4b3a3d7cf27ab5"
+  },
+  "order_id": "ORD004",
+  "customer_name": "Fatima Noor",
+  "customer_email": "fatima.noor@gmail.com",
+  "restaurant_name": "Biryani House",
+  "items": [
+    "Chicken Biryani"
+  ],
+  "quantities": [
+    2
+  ],
+  "item_prices": [
+    350
+  ],
+  "subtotal": 700,
+  "delivery_fee": 25,
+  "grand_total": 725,
+  "status": "Delivered",
+  "order_date": "2026-06-19"
+},
+{
+  "_id": {
+    "$oid": "6a37e0388d4b3a3d7cf27ab7"
+  },
+  "order_id": "ORD005",
+  "customer_name": "Usman Sheikh",
+  "customer_email": "usman.sheikh@gmail.com",
+  "restaurant_name": "Burger Hub",
+  "items": [
+    "Classic Burger",
+    "Cheese Burger"
+  ],
+  "quantities": [
+    1,
+    1
+  ],
+  "item_prices": [
+    350,
+    400
+  ],
+  "subtotal": 750,
+  "delivery_fee": 30,
+  "grand_total": 780,
+  "status": "Delivered",
+  "order_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e0438d4b3a3d7cf27ab9"
+  },
+  "order_id": "ORD006",
+  "customer_name": "Sana Tariq",
+  "customer_email": "sana.tariq@gmail.com",
+  "restaurant_name": "Chinese Wok",
+  "items": [
+    "Chicken Chow Mein"
+  ],
+  "quantities": [
+    1
+  ],
+  "item_prices": [
+    450
+  ],
+  "subtotal": 450,
+  "delivery_fee": 45,
+  "grand_total": 495,
+  "status": "Out for Delivery",
+  "order_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e04d8d4b3a3d7cf27abb"
+  },
+  "order_id": "ORD007",
+  "customer_name": "Hamza Abbas",
+  "customer_email": "hamza.abbas@gmail.com",
+  "restaurant_name": "Desi Dhaba",
+  "items": [
+    "Daal Tadka"
+  ],
+  "quantities": [
+    2
+  ],
+  "item_prices": [
+    250
+  ],
+  "subtotal": 500,
+  "delivery_fee": 35,
+  "grand_total": 535,
+  "status": "Delivered",
+  "order_date": "2026-06-18"
+},
+{
+  "_id": {
+    "$oid": "6a37e05d8d4b3a3d7cf27abd"
+  },
+  "order_id": "ORD008",
+  "customer_name": "Zara Hussain",
+  "customer_email": "zara.hussain@gmail.com",
+  "restaurant_name": "Sushi Spot",
+  "items": [
+    "California Roll"
+  ],
+  "quantities": [
+    1
+  ],
+  "item_prices": [
+    900
+  ],
+  "subtotal": 900,
+  "delivery_fee": 70,
+  "grand_total": 970,
+  "status": "Delivered",
+  "order_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e0678d4b3a3d7cf27abf"
+  },
+  "order_id": "ORD009",
+  "customer_name": "Omar Farooq",
+  "customer_email": "omar.farooq@gmail.com",
+  "restaurant_name": "Steak House",
+  "items": [
+    "Ribeye Steak"
+  ],
+  "quantities": [
+    1
+  ],
+  "item_prices": [
+    2500
+  ],
+  "subtotal": 2500,
+  "delivery_fee": 80,
+  "grand_total": 2580,
+  "status": "Preparing",
+  "order_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e0728d4b3a3d7cf27ac1"
+  },
+  "order_id": "ORD010",
+  "customer_name": "Hina Rizvi",
+  "customer_email": "hina.rizvi@gmail.com",
+  "restaurant_name": "Tasty Bites",
+  "items": [
+    "Chicken Karahi"
+  ],
+  "quantities": [
+    1
+  ],
+  "item_prices": [
+    550
+  ],
+  "subtotal": 550,
+  "delivery_fee": 50,
+  "grand_total": 600,
+  "status": "Delivered",
+  "order_date": "2026-06-19"
+}]

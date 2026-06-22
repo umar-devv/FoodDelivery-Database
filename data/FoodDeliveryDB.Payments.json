@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "6a37e1398d4b3a3d7cf27ad0"
+  },
+  "payment_id": "PAY001",
+  "order_id": "ORD001",
+  "customer_name": "Ali Khan",
+  "amount": 400,
+  "method": "Cash",
+  "status": "Paid",
+  "payment_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e28b8d4b3a3d7cf27ad2"
+  },
+  "payment_id": "PAY002",
+  "order_id": "ORD002",
+  "customer_name": "Ayesha Malik",
+  "amount": 1490,
+  "method": "Credit Card",
+  "status": "Paid",
+  "payment_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e2958d4b3a3d7cf27ad4"
+  },
+  "payment_id": "PAY003",
+  "order_id": "ORD003",
+  "customer_name": "Bilal Ahmed",
+  "amount": 970,
+  "method": "Wallet",
+  "status": "Pending",
+  "payment_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e29f8d4b3a3d7cf27ad6"
+  },
+  "payment_id": "PAY004",
+  "order_id": "ORD004",
+  "customer_name": "Fatima Noor",
+  "amount": 725,
+  "method": "Wallet",
+  "status": "Paid",
+  "payment_date": "2026-06-19"
+},
+{
+  "_id": {
+    "$oid": "6a37e2a98d4b3a3d7cf27ad8"
+  },
+  "payment_id": "PAY005",
+  "order_id": "ORD005",
+  "customer_name": "Usman Sheikh",
+  "amount": 780,
+  "method": "Cash",
+  "status": "Paid",
+  "payment_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e2b58d4b3a3d7cf27ada"
+  },
+  "payment_id": "PAY006",
+  "order_id": "ORD006",
+  "customer_name": "Sana Tariq",
+  "amount": 495,
+  "method": "Debit Card",
+  "status": "Paid",
+  "payment_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e2bf8d4b3a3d7cf27adc"
+  },
+  "payment_id": "PAY007",
+  "order_id": "ORD007",
+  "customer_name": "Hamza Abbas",
+  "amount": 535,
+  "method": "Cash",
+  "status": "Paid",
+  "payment_date": "2026-06-18"
+},
+{
+  "_id": {
+    "$oid": "6a37e2ca8d4b3a3d7cf27ade"
+  },
+  "payment_id": "PAY008",
+  "order_id": "ORD008",
+  "customer_name": "Zara Hussain",
+  "amount": 970,
+  "method": "Credit Card",
+  "status": "Paid",
+  "payment_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e2d68d4b3a3d7cf27ae0"
+  },
+  "payment_id": "PAY009",
+  "order_id": "ORD009",
+  "customer_name": "Omar Farooq",
+  "amount": 2580,
+  "method": "Debit Card",
+  "status": "Pending",
+  "payment_date": "2026-06-20"
+},
+{
+  "_id": {
+    "$oid": "6a37e2e48d4b3a3d7cf27ae2"
+  },
+  "payment_id": "PAY010",
+  "order_id": "ORD010",
+  "customer_name": "Hina Rizvi",
+  "amount": 600,
+  "method": "Wallet",
+  "status": "Paid",
+  "payment_date": "2026-06-19"
+}]

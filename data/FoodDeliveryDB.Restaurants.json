@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "6a37dd1d8d4b3a3d7cf27a66"
+  },
+  "restaurant_id": "REST001",
+  "name": "Tasty Bites",
+  "cuisine": "Pakistani",
+  "city": "Lahore",
+  "address": "123 Food Street, Lahore",
+  "phone": "04211123456",
+  "rating": 4.5,
+  "delivery_fee": 50,
+  "is_open": true,
+  "min_order": 300
+},
+{
+  "_id": {
+    "$oid": "6a37dd2b8d4b3a3d7cf27a68"
+  },
+  "restaurant_id": "REST002",
+  "name": "Pizza Paradise",
+  "cuisine": "Italian",
+  "city": "Islamabad",
+  "address": "456 Mall Road, Islamabad",
+  "phone": "05111234567",
+  "rating": 4.3,
+  "delivery_fee": 40,
+  "is_open": true,
+  "min_order": 200
+},
+{
+  "_id": {
+    "$oid": "6a37dd3b8d4b3a3d7cf27a6a"
+  },
+  "restaurant_id": "REST003",
+  "name": "Spice Garden",
+  "cuisine": "Indian",
+  "city": "Karachi",
+  "address": "789 Clifton Road, Karachi",
+  "phone": "02113456789",
+  "rating": 4.7,
+  "delivery_fee": 60,
+  "is_open": false,
+  "min_order": 500
+},
+{
+  "_id": {
+    "$oid": "6a37dd898d4b3a3d7cf27a6e"
+  },
+  "restaurant_id": "REST004",
+  "name": "Burger Hub",
+  "cuisine": "Fast Food",
+  "city": "Lahore",
+  "address": "456 Liberty Market, Lahore",
+  "phone": "04219876543",
+  "rating": 4.2,
+  "delivery_fee": 30,
+  "is_open": true,
+  "min_order": 150
+},
+{
+  "_id": {
+    "$oid": "6a37dd948d4b3a3d7cf27a70"
+  },
+  "restaurant_id": "REST005",
+  "name": "Biryani House",
+  "cuisine": "Pakistani",
+  "city": "Karachi",
+  "address": "321 Hussainabad, Karachi",
+  "phone": "02113456780",
+  "rating": 4.8,
+  "delivery_fee": 25,
+  "is_open": true,
+  "min_order": 200
+},
+{
+  "_id": {
+    "$oid": "6a37dd9f8d4b3a3d7cf27a72"
+  },
+  "restaurant_id": "REST006",
+  "name": "Chinese Wok",
+  "cuisine": "Chinese",
+  "city": "Rawalpindi",
+  "address": "789 Saddar, Rawalpindi",
+  "phone": "05119876543",
+  "rating": 4.1,
+  "delivery_fee": 45,
+  "is_open": true,
+  "min_order": 250
+},
+{
+  "_id": {
+    "$oid": "6a37df208d4b3a3d7cf27a92"
+  },
+  "restaurant_id": "REST007",
+  "name": "Desi Dhaba",
+  "cuisine": "Pakistani",
+  "city": "Faisalabad",
+  "address": "123 Satyana Road, Faisalabad",
+  "phone": "04111234567",
+  "rating": 4.6,
+  "delivery_fee": 35,
+  "is_open": true,
+  "min_order": 200
+},
+{
+  "_id": {
+    "$oid": "6a37df2c8d4b3a3d7cf27a94"
+  },
+  "restaurant_id": "REST008",
+  "name": "Sushi Spot",
+  "cuisine": "Japanese",
+  "city": "Islamabad",
+  "address": "456 F-8, Islamabad",
+  "phone": "05111234568",
+  "rating": 4.4,
+  "delivery_fee": 70,
+  "is_open": true,
+  "min_order": 600
+},
+{
+  "_id": {
+    "$oid": "6a37df578d4b3a3d7cf27a96"
+  },
+  "restaurant_id": "REST009",
+  "name": "Steak House",
+  "cuisine": "Continental",
+  "city": "Lahore",
+  "address": "789 Gulberg, Lahore",
+  "phone": "04211234567",
+  "rating": 4.9,
+  "delivery_fee": 80,
+  "is_open": true,
+  "min_order": 800
+},
+{
+  "_id": {
+    "$oid": "6a37df668d4b3a3d7cf27a98"
+  },
+  "restaurant_id": "REST010",
+  "name": "Sweet Palace",
+  "cuisine": "Desserts",
+  "city": "Karachi",
+  "address": "123 Tariq Road, Karachi",
+  "phone": "02111234567",
+  "rating": 4,
+  "delivery_fee": 20,
+  "is_open": true,
+  "min_order": 100
+}]

@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "6a37e07f8d4b3a3d7cf27ac4"
+  },
+  "rider_id": "RID001",
+  "name": "Usman Ali",
+  "phone": "03005678901",
+  "vehicle": "Bike",
+  "vehicle_no": "LE-1234",
+  "status": "Available",
+  "total_deliveries": 45,
+  "rating": 4.7,
+  "earnings": 13500
+},
+{
+  "_id": {
+    "$oid": "6a37e08a8d4b3a3d7cf27ac6"
+  },
+  "rider_id": "RID002",
+  "name": "Imran Khan",
+  "phone": "03215678901",
+  "vehicle": "Bike",
+  "vehicle_no": "IZ-5678",
+  "status": "Busy",
+  "total_deliveries": 32,
+  "rating": 4.4,
+  "earnings": 9600
+},
+{
+  "_id": {
+    "$oid": "6a37e0968d4b3a3d7cf27ac8"
+  },
+  "rider_id": "RID003",
+  "name": "Bilal Malik",
+  "phone": "03155678901",
+  "vehicle": "Car",
+  "vehicle_no": "KA-7890",
+  "status": "Available",
+  "total_deliveries": 58,
+  "rating": 4.8,
+  "earnings": 17400
+},
+{
+  "_id": {
+    "$oid": "6a37e11d8d4b3a3d7cf27aca"
+  },
+  "rider_id": "RID004",
+  "name": "Sana Tariq",
+  "phone": "03345678901",
+  "vehicle": "Bike",
+  "vehicle_no": "RW-2345",
+  "status": "Available",
+  "total_deliveries": 28,
+  "rating": 4.5,
+  "earnings": 8400
+},
+{
+  "_id": {
+    "$oid": "6a37e1288d4b3a3d7cf27acc"
+  },
+  "rider_id": "RID005",
+  "name": "Hamza Ali",
+  "phone": "03165678901",
+  "vehicle": "Bike",
+  "vehicle_no": "FS-6789",
+  "status": "Offline",
+  "total_deliveries": 15,
+  "rating": 4.2,
+  "earnings": 4500
+}]

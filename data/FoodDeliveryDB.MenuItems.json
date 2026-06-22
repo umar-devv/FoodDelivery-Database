@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "6a37dddb8d4b3a3d7cf27a79"
+  },
+  "item_id": "ITEM001",
+  "restaurant_name": "Tasty Bites",
+  "name": "Chicken Biryani",
+  "price": 450,
+  "category": "Rice",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37dde78d4b3a3d7cf27a7b"
+  },
+  "item_id": "ITEM002",
+  "restaurant_name": "Tasty Bites",
+  "name": "Chicken Karahi",
+  "price": 550,
+  "category": "Curry",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37ddf38d4b3a3d7cf27a7d"
+  },
+  "item_id": "ITEM003",
+  "restaurant_name": "Tasty Bites",
+  "name": "Seekh Kabab",
+  "price": 600,
+  "category": "BBQ",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37ddfd8d4b3a3d7cf27a7f"
+  },
+  "item_id": "ITEM004",
+  "restaurant_name": "Pizza Paradise",
+  "name": "Margherita Pizza",
+  "price": 850,
+  "category": "Pizza",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37de098d4b3a3d7cf27a81"
+  },
+  "item_id": "ITEM005",
+  "restaurant_name": "Pizza Paradise",
+  "name": "Pepperoni Pizza",
+  "price": 850,
+  "category": "Pizza",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37de198d4b3a3d7cf27a83"
+  },
+  "item_id": "ITEM006",
+  "restaurant_name": "Spice Garden",
+  "name": "Butter Chicken",
+  "price": 750,
+  "category": "Curry",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37de248d4b3a3d7cf27a85"
+  },
+  "item_id": "ITEM007",
+  "restaurant_name": "Spice Garden",
+  "name": "Naan Bread",
+  "price": 80,
+  "category": "Bread",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37df7d8d4b3a3d7cf27a9b"
+  },
+  "item_id": "ITEM008",
+  "restaurant_name": "Burger Hub",
+  "name": "Classic Burger",
+  "price": 350,
+  "category": "Burger",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37df8f8d4b3a3d7cf27a9e"
+  },
+  "item_id": "ITEM009",
+  "restaurant_name": "Burger Hub",
+  "name": "Cheese Burger",
+  "price": 400,
+  "category": "Burger",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37df998d4b3a3d7cf27aa0"
+  },
+  "item_id": "ITEM010",
+  "restaurant_name": "Biryani House",
+  "name": "Chicken Biryani",
+  "price": 350,
+  "category": "Rice",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37dfa78d4b3a3d7cf27aa2"
+  },
+  "item_id": "ITEM011",
+  "restaurant_name": "Biryani House",
+  "name": "Mutton Biryani",
+  "price": 500,
+  "category": "Rice",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37dfb08d4b3a3d7cf27aa4"
+  },
+  "item_id": "ITEM012",
+  "restaurant_name": "Chinese Wok",
+  "name": "Chicken Chow Mein",
+  "price": 450,
+  "category": "Noodles",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37dfba8d4b3a3d7cf27aa6"
+  },
+  "item_id": "ITEM013",
+  "restaurant_name": "Desi Dhaba",
+  "name": "Daal Tadka",
+  "price": 250,
+  "category": "Curry",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37dfc58d4b3a3d7cf27aa8"
+  },
+  "item_id": "ITEM014",
+  "restaurant_name": "Sushi Spot",
+  "name": "California Roll",
+  "price": 900,
+  "category": "Sushi",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "6a37dfd28d4b3a3d7cf27aaa"
+  },
+  "item_id": "ITEM015",
+  "restaurant_name": "Steak House",
+  "name": "Ribeye Steak",
+  "price": 2500,
+  "category": "Steak",
+  "available": true
+}]

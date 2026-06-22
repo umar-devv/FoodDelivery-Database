@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "6a37dc008d4b3a3d7cf27a4e"
+  },
+  "customer_id": "CUST001",
+  "name": "Ali Khan",
+  "email": "ali.khan@gmail.com",
+  "phone": "03009999999",
+  "city": "Lahore",
+  "address": "123 Gulberg, Lahore",
+  "total_orders": 5,
+  "total_spent": 4500,
+  "status": "Active",
+  "registered": "2025-01-15"
+},
+{
+  "_id": {
+    "$oid": "6a37dc258d4b3a3d7cf27a50"
+  },
+  "customer_id": "CUST002",
+  "name": "Ayesha Malik",
+  "email": "ayesha.malik@gmail.com",
+  "phone": "03211234567",
+  "city": "Islamabad",
+  "address": "456 F-7, Islamabad",
+  "total_orders": 3,
+  "total_spent": 2800,
+  "status": "Active",
+  "registered": "2025-02-20"
+},
+{
+  "_id": {
+    "$oid": "6a37dc318d4b3a3d7cf27a52"
+  },
+  "customer_id": "CUST003",
+  "name": "Bilal Ahmed",
+  "email": "bilal.ahmed@gmail.com",
+  "phone": "03451234567",
+  "city": "Karachi",
+  "address": "789 Clifton, Karachi",
+  "total_orders": 7,
+  "total_spent": 6200,
+  "status": "Active",
+  "registered": "2024-11-10"
+},
+{
+  "_id": {
+    "$oid": "6a37dc478d4b3a3d7cf27a54"
+  },
+  "customer_id": "CUST004",
+  "name": "Fatima Noor",
+  "email": "fatima.noor@gmail.com",
+  "phone": "03151234567",
+  "city": "Lahore",
+  "address": "321 DHA, Lahore",
+  "total_orders": 2,
+  "total_spent": 1500,
+  "status": "Active",
+  "registered": "2025-12-05"
+},
+{
+  "_id": {
+    "$oid": "6a37dc568d4b3a3d7cf27a56"
+  },
+  "customer_id": "CUST005",
+  "name": "Usman Sheikh",
+  "email": "usman.sheikh@gmail.com",
+  "phone": "03451234568",
+  "city": "Rawalpindi",
+  "address": "567 Saddar, Rawalpindi",
+  "total_orders": 4,
+  "total_spent": 3200,
+  "status": "Active",
+  "registered": "2025-06-25"
+},
+{
+  "_id": {
+    "$oid": "6a37dc6b8d4b3a3d7cf27a59"
+  },
+  "customer_id": "CUST006",
+  "name": "Sana Tariq",
+  "email": "sana.tariq@gmail.com",
+  "phone": "03331234567",
+  "city": "Karachi",
+  "address": "234 Gulshan-e-Iqbal, Karachi",
+  "total_orders": 1,
+  "total_spent": 800,
+  "status": "Active",
+  "registered": "2026-01-10"
+},
+{
+  "_id": {
+    "$oid": "6a37dc7a8d4b3a3d7cf27a5b"
+  },
+  "customer_id": "CUST007",
+  "name": "Hamza Abbas",
+  "email": "hamza.abbas@gmail.com",
+  "phone": "03161234567",
+  "city": "Islamabad",
+  "address": "789 G-11, Islamabad",
+  "total_orders": 6,
+  "total_spent": 5100,
+  "status": "Active",
+  "registered": "2025-08-15"
+},
+{
+  "_id": {
+    "$oid": "6a37dc898d4b3a3d7cf27a5d"
+  },
+  "customer_id": "CUST008",
+  "name": "Zara Hussain",
+  "email": "zara.hussain@gmail.com",
+  "phone": "03071234567",
+  "city": "Lahore",
+  "address": "456 Model Town, Lahore",
+  "total_orders": 3,
+  "total_spent": 2700,
+  "status": "Active",
+  "registered": "2025-09-20"
+},
+{
+  "_id": {
+    "$oid": "6a37ddb98d4b3a3d7cf27a75"
+  },
+  "customer_id": "CUST009",
+  "name": "Umar Farooq",
+  "email": "omar.farooq@gmail.com",
+  "phone": "03441234567",
+  "city": "Faisalabad",
+  "address": "123 Canal Road, Faisalabad",
+  "total_orders": 8,
+  "total_spent": 7200,
+  "status": "Active",
+  "registered": "2024-10-05"
+},
+{
+  "_id": {
+    "$oid": "6a37dec28d4b3a3d7cf27a8f"
+  },
+  "customer_id": "CUST010",
+  "name": "Hina Rizvi",
+  "email": "hina.rizvi@gmail.com",
+  "phone": "03181234567",
+  "city": "Multan",
+  "address": "567 Bosan Road, Multan",
+  "total_orders": 2,
+  "total_spent": 1900,
+  "status": "Active",
+  "registered": "2025-11-12"
+}]

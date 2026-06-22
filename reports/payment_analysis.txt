@@ -1,0 +1,10 @@
+==================== PAYMENT ANALYSIS ====================
+
+Payment Method Breakdown:
+- Cash: 3 payments (Total: Rs.1715.0)
+- Credit Card: 2 payments (Total: Rs.2460.0)
+- Wallet: 3 payments (Total: Rs.2295.0)
+- Debit Card: 2 payments (Total: Rs.3075.0)
+
+Total Payments Processed: 10
+Total Amount Processed: Rs.9545.0

@@ -1,10 +1,24 @@
 # 🍔 Food Delivery Database Management System (MongoDB)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MongoDB-NoSQL-green?style=for-the-badge&logo=mongodb">
-  <img src="https://img.shields.io/badge/Database-Project-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge">
+  <a href="https://www.mongodb.com/">
+    <img src="https://img.shields.io/badge/MongoDB-NoSQL-green?style=for-the-badge&logo=mongodb">
+  </a>
+  <a href="https://www.mongodb.com/products/compass">
+    <img src="https://img.shields.io/badge/Database-Project-blue?style=for-the-badge">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge">
+  </a>
+  <a href="https://www.java.com/">
+    <img src="https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java">
+  </a>
+  <a href="https://maven.apache.org/">
+    <img src="https://img.shields.io/badge/Maven-Build_Tool-red?style=for-the-badge&logo=apache-maven">
+  </a>
 </p>
 
 ---

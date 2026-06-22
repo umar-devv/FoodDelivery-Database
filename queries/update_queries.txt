@@ -1,0 +1,25 @@
+==================== UPDATE QUERIES ====================
+
+1. Update customer's city:
+   db.Customers.updateOne(
+       { "customer_id": "CUST001" },
+       { $set: { "city": "Islamabad" } }
+   )
+
+2. Increase all menu item prices by 10%:
+   db.MenuItems.updateMany(
+       {},
+       { $mul: { "price": 1.10 } }
+   )
+
+3. Update rider status to Busy:
+   db.Riders.updateOne(
+       { "rider_id": "RID001" },
+       { $set: { "status": "Busy" } }
+   )
+
+4. Mark order as delivered:
+   db.Orders.updateOne(
+       { "order_id": "ORD003" },
+       { $set: { "status": "Delivered" } }
+   )

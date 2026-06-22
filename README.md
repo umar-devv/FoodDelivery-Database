@@ -1,333 +1,334 @@
-# 🍔 Food Delivery Database - MongoDB Project
+# 🍔 Food Delivery Database Management System (MongoDB)
 
-[![MongoDB](https://img.shields.io/badge/MongoDB-4.4+-green.svg)](https://www.mongodb.com/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-
-A complete, production-ready sample database for a food delivery system built with MongoDB. Perfect for learning, portfolio, or as a starting point for your food delivery app.
-
----
-
-## 📋 **Project Overview**
-
-This database simulates a real-world food delivery platform with:
-
-- **6 Collections** covering all business entities
-- **50+ Documents** with realistic Pakistani food delivery data
-- **Complete Relationships** between customers, orders, restaurants, and payments
-- **Ready-to-Use Queries** for data analysis
-- **Generated Reports** from real data insights
-
-### **Key Features**
-✅ Realistic sample data with Pakistani cities and cuisine  
-✅ Proper MongoDB schema design  
-✅ Relationship mapping between collections  
-✅ Pre-written queries for common operations  
-✅ Data analysis reports  
-✅ Easy to import and use  
+<p align="center">
+  <img src="https://img.shields.io/badge/MongoDB-NoSQL-green?style=for-the-badge&logo=mongodb">
+  <img src="https://img.shields.io/badge/Database-Project-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge">
+</p>
 
 ---
 
-## 🗂️ **Collections & Data Summary**
+## 📖 Introduction
 
-| # | Collection | Documents | Description | Key Fields |
-|---|------------|-----------|-------------|------------|
-| 1 | **customers** | 10 | User profiles with order history | name, email, city, total_spent |
-| 2 | **restaurants** | 10 | Restaurant details and ratings | name, cuisine, rating, delivery_fee |
-| 3 | **menuitems** | 15 | Food items with pricing | name, price, category, restaurant |
-| 4 | **orders** | 10 | Complete order transactions | items, status, grand_total |
-| 5 | **payments** | 10 | Payment records | method, amount, status |
-| 6 | **riders** | 5 | Delivery personnel info | vehicle, status, earnings |
+The **Food Delivery Database Management System** is a NoSQL database project developed using **MongoDB**. This project simulates a modern online food delivery platform where customers can browse restaurants, order food, make payments, and receive deliveries through riders.
 
-### **Data Statistics**
-- **Total Customers**: 10 (100% Active)
-- **Total Orders**: 10 
-  - Delivered: 7
-  - Preparing: 2
-  - Out for Delivery: 1
-- **Total Revenue**: ₨8,500 (from completed orders)
-- **Total Restaurants**: 10 across 5 cities
-- **Total Riders**: 5 with ₨53,400 total earnings
-- **Total Menu Items**: 15 across 8 categories
+The project is designed for students, beginners, and developers who want to learn MongoDB database design and implementation through a real-world application. It demonstrates proper database modeling, collection relationships, CRUD operations, aggregation pipelines, and report generation.
 
 ---
 
-## 🔗 **Schema Relationships**
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│ CUSTOMERS │────▶│ ORDERS │────▶│ PAYMENTS │
-│ (1) │ │ (M) │ │ (1) │
-└─────────────┘ └─────────────┘ └─────────────┘
-│
-▼
-┌─────────────┐
-│ RESTAURANTS │
-│ (1) │
-└─────────────┘
-│
-▼
-┌─────────────┐
-│ MENU ITEMS │
-│ (M) │
-└─────────────┘
+# 🎯 Project Objectives
 
-┌─────────────┐
-│ RIDERS │
-│ (M) │
-└─────────────┘
+The main objectives of this project are:
 
-text
-
-### **Relationship Details**
-- **Customers → Orders**: One-to-Many (One customer can have many orders)
-- **Orders → Payments**: One-to-One (Each order has one payment)
-- **Orders → Restaurants**: Many-to-One (Many orders go to one restaurant)
-- **Restaurants → Menu Items**: One-to-Many (One restaurant has many menu items)
-- **Riders → Orders**: Many-to-Many (Riders deliver many orders)
+- Design a complete food delivery database using MongoDB.
+- Implement a real-world NoSQL database structure.
+- Store and manage customer, restaurant, order, payment, and rider information.
+- Perform CRUD operations efficiently.
+- Generate useful business reports.
+- Practice aggregation pipelines and data analysis.
+- Understand document-based database architecture.
+- Develop hands-on experience with MongoDB Compass and Mongo Shell.
 
 ---
 
-## 🚀 **How to Import Data**
+# 🌟 Features
 
-### **Method 1: MongoDB Compass (GUI - Recommended for Beginners)**
+✅ Complete MongoDB Database Project
 
-1. **Download MongoDB Compass** from [mongodb.com/products/compass](https://www.mongodb.com/products/compass)
-2. **Connect** to your MongoDB instance
-3. **Create a new database** called `FoodDeliveryDB`
-4. **Click "Add Data"** → **"Import File"**
-5. **Select JSON files** from the `data/` folder
-6. **Import each collection** one by one:
+✅ 6 Interconnected Collections
 
-| Collection | File to Import |
-|------------|----------------|
-| customers | customers.json |
-| restaurants | restaurants.json |
-| menuitems | menuitems.json |
-| orders | orders.json |
-| payments | payments.json |
-| riders | riders.json |
+✅ Realistic Food Delivery Data
 
-### **Method 2: Command Line (Terminal)**
+✅ Customer Management
 
-```bash
-# Import all collections at once
-mongoimport --db FoodDeliveryDB --collection customers --file data/customers.json --jsonArray
-mongoimport --db FoodDeliveryDB --collection restaurants --file data/restaurants.json --jsonArray
-mongoimport --db FoodDeliveryDB --collection menuitems --file data/menuitems.json --jsonArray
-mongoimport --db FoodDeliveryDB --collection orders --file data/orders.json --jsonArray
-mongoimport --db FoodDeliveryDB --collection payments --file data/payments.json --jsonArray
-mongoimport --db FoodDeliveryDB --collection riders --file data/riders.json --jsonArray
+✅ Restaurant Management
 
-# Verify import
-mongosh
-use FoodDeliveryDB
-show collections
-db.customers.count()  # Should show 10
-Method 3: MongoDB Shell
-javascript
-// In MongoDB Shell
-use FoodDeliveryDB
+✅ Menu Item Management
 
-// Import using load() function
-load("data/customers.json")
-load("data/restaurants.json")
-// ... etc
-📊 Sample Queries
-Basic Queries
-1. Find all customers from Lahore
-javascript
-db.customers.find({ city: "Lahore" }).pretty()
-// Returns: 3 customers (Ali, Fatima, Zara)
-2. Find all delivered orders
-javascript
-db.orders.find({ status: "Delivered" }).pretty()
-// Returns: 7 orders
-3. Find active restaurants with rating > 4.5
-javascript
-db.restaurants.find({ 
-  rating: { $gte: 4.5 }, 
-  is_open: true 
-}).pretty()
-// Returns: Tasty Bites, Spice Garden, Biryani House, Desi Dhaba, Steak House
-4. Find available riders
-javascript
-db.riders.find({ status: "Available" }).pretty()
-// Returns: Usman Ali, Bilal Malik, Sana Tariq
-Advanced Aggregation Queries
-5. Total Revenue by Restaurant
-javascript
-db.orders.aggregate([
-  { 
-    $group: { 
-      _id: "$restaurant_name", 
-      totalRevenue: { $sum: "$grand_total" },
-      orderCount: { $sum: 1 }
-    } 
-  },
-  { $sort: { totalRevenue: -1 } }
-])
-6. Most Popular Food Items
-javascript
-db.orders.aggregate([
-  { $unwind: "$items" },
-  { 
-    $group: { 
-      _id: "$items", 
-      count: { $sum: 1 } 
-    } 
-  },
-  { $sort: { count: -1 } },
-  { $limit: 5 }
-])
-7. Customer Spending Analysis
-javascript
-db.customers.aggregate([
-  { 
-    $group: {
-      _id: "$city",
-      totalSpent: { $sum: "$total_spent" },
-      avgSpent: { $avg: "$total_spent" },
-      customerCount: { $sum: 1 }
-    }
-  },
-  { $sort: { totalSpent: -1 } }
-])
-8. Payment Method Distribution
-javascript
-db.payments.aggregate([
-  { 
-    $group: {
-      _id: "$method",
-      count: { $sum: 1 },
-      totalAmount: { $sum: "$amount" }
-    }
-  },
-  { $sort: { count: -1 } }
-])
-9. Order Status Summary
-javascript
-db.orders.aggregate([
-  { 
-    $group: {
-      _id: "$status",
-      count: { $sum: 1 },
-      totalValue: { $sum: "$grand_total" }
-    }
-  }
-])
-10. Restaurant Performance Metrics
-javascript
-db.orders.aggregate([
-  {
-    $group: {
-      _id: "$restaurant_name",
-      totalOrders: { $sum: 1 },
-      totalRevenue: { $sum: "$grand_total" },
-      avgOrderValue: { $avg: "$grand_total" }
-    }
-  },
-  { $sort: { totalRevenue: -1 } }
-])
-📈 Pre-Generated Reports
-Check the reports/ folder for detailed analysis:
+✅ Order Tracking System
 
-Report	Description
-total_revenue.txt	Total revenue from all orders
-orders_by_restaurant.txt	Orders count and revenue per restaurant
-popular_items.txt	Most ordered food items
-customer_spending.txt	Top spending customers
-payment_methods.txt	Payment method distribution
-orders_by_status.txt	Order status breakdown
-city_analysis.txt	City-wise customer and order analysis
-🖼️ Screenshots
-Check the screenshots/ folder for visual documentation:
+✅ Payment Processing Records
 
-Database view in MongoDB Compass
+✅ Rider Management System
 
-Each collection data view
+✅ MongoDB Aggregation Pipelines
 
-Query results
+✅ Report Generation
 
-Report visualizations
+✅ MongoDB Compass Compatible
 
-🛠️ MongoDB Setup Guide
-Install MongoDB on Windows
-Download MongoDB Installer from mongodb.com/try/download/community
+✅ Beginner-Friendly Structure
 
-Run Installer and choose "Complete" setup
+---
 
-Choose "Run Service as Network Service"
+# 🏗 System Overview
 
-Install MongoDB Compass (check the box)
+The Food Delivery System consists of six major entities:
 
-Click Install and wait for completion
+### 👤 Customers
+Stores customer information, contact details, city, and spending history.
 
-Install MongoDB on macOS
-bash
-# Using Homebrew
-brew tap mongodb/brew
-brew install mongodb-community
+### 🍽 Restaurants
+Stores restaurant details including ratings, cuisine types, and delivery fees.
 
-# Start MongoDB service
-brew services start mongodb-community
-Install MongoDB on Linux (Ubuntu)
-bash
-# Import MongoDB public GPG key
-wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+### 🍕 Menu Items
+Contains food products available for customers to order.
 
-# Add MongoDB repository
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+### 📦 Orders
+Maintains all order transactions and delivery statuses.
 
-# Update and install
-sudo apt-get update
-sudo apt-get install -y mongodb-org
+### 💳 Payments
+Stores payment methods, payment amounts, and transaction statuses.
 
-# Start MongoDB
-sudo systemctl start mongod
-📚 MongoDB Compass Guide
-Connecting to MongoDB
-Open MongoDB Compass
+### 🛵 Riders
+Manages delivery personnel information and earnings.
 
-Connection String: mongodb://localhost:27017
+---
 
-Click "Connect"
+# 🗂 Database Collections
 
-Creating Database
-Click "Create Database"
+## 1️⃣ Customers Collection
 
-Database Name: FoodDeliveryDB
+Stores customer information.
 
-Collection Name: customers (you'll create others)
+### Sample Document
 
-Click **"Create Database"`
+```json
+{
+  "_id": ObjectId(),
+  "name": "Ali Khan",
+  "email": "ali@gmail.com",
+  "phone": "03001234567",
+  "city": "Lahore",
+  "total_spent": 2500
+}
+```
 
-Importing Data
-Select your database (FoodDeliveryDB)
+### Fields
 
-Click the collection name
+| Field | Description |
+|---------|-------------|
+| _id | Unique Customer ID |
+| name | Customer Name |
+| email | Customer Email |
+| phone | Contact Number |
+| city | Customer City |
+| total_spent | Total Amount Spent |
 
-Click "Add Data" → "Import File"
+---
 
-Select JSON file from data/ folder
+## 2️⃣ Restaurants Collection
 
-Click "Import"
+Stores restaurant details.
 
-📝 Query Files Included
-Check the queries/ folder for:
+### Sample Document
 
-find_queries.txt - All read operations
+```json
+{
+  "_id": ObjectId(),
+  "name": "Biryani House",
+  "cuisine": "Pakistani",
+  "rating": 4.8,
+  "delivery_fee": 150,
+  "is_open": true
+}
+```
 
-update_queries.txt - All update operations
+### Fields
 
-delete_queries.txt - All delete operations
+| Field | Description |
+|---------|-------------|
+| _id | Restaurant ID |
+| name | Restaurant Name |
+| cuisine | Cuisine Type |
+| rating | Customer Rating |
+| delivery_fee | Delivery Charges |
+| is_open | Availability Status |
 
-aggregate_queries.txt - Advanced aggregation pipelines
+---
 
-📁 Project Structure
-text
+## 3️⃣ Menu Items Collection
+
+Stores available food items.
+
+### Sample Document
+
+```json
+{
+  "_id": ObjectId(),
+  "name": "Chicken Biryani",
+  "category": "Main Course",
+  "price": 650,
+  "restaurant": "Biryani House"
+}
+```
+
+### Fields
+
+| Field | Description |
+|---------|-------------|
+| _id | Menu Item ID |
+| name | Food Item Name |
+| category | Food Category |
+| price | Food Price |
+| restaurant | Restaurant Name |
+
+---
+
+## 4️⃣ Orders Collection
+
+Stores customer orders.
+
+### Sample Document
+
+```json
+{
+  "_id": ObjectId(),
+  "customer_name": "Ali Khan",
+  "restaurant_name": "Biryani House",
+  "items": [
+    "Chicken Biryani",
+    "Cold Drink"
+  ],
+  "status": "Delivered",
+  "grand_total": 800
+}
+```
+
+### Fields
+
+| Field | Description |
+|---------|-------------|
+| _id | Order ID |
+| customer_name | Customer Name |
+| restaurant_name | Restaurant Name |
+| items | Ordered Food Items |
+| status | Current Status |
+| grand_total | Final Amount |
+
+---
+
+## 5️⃣ Payments Collection
+
+Stores payment records.
+
+### Sample Document
+
+```json
+{
+  "_id": ObjectId(),
+  "method": "Cash",
+  "amount": 800,
+  "status": "Paid"
+}
+```
+
+### Fields
+
+| Field | Description |
+|---------|-------------|
+| _id | Payment ID |
+| method | Payment Method |
+| amount | Payment Amount |
+| status | Payment Status |
+
+---
+
+## 6️⃣ Riders Collection
+
+Stores rider information.
+
+### Sample Document
+
+```json
+{
+  "_id": ObjectId(),
+  "name": "Usman Ali",
+  "vehicle": "Bike",
+  "status": "Available",
+  "earnings": 12000
+}
+```
+
+### Fields
+
+| Field | Description |
+|---------|-------------|
+| _id | Rider ID |
+| name | Rider Name |
+| vehicle | Vehicle Type |
+| status | Availability Status |
+| earnings | Total Earnings |
+
+---
+
+# 🔗 Database Relationships
+
+```text
+CUSTOMERS
+    │
+    ▼
+ORDERS
+    │
+    ├────────► PAYMENTS
+    │
+    ▼
+RESTAURANTS
+    │
+    ▼
+MENU ITEMS
+
+RIDERS
+    │
+    ▼
+ORDERS
+```
+
+### Relationship Summary
+
+| Relationship | Type |
+|-------------|------|
+| Customer → Orders | One-to-Many |
+| Order → Payment | One-to-One |
+| Restaurant → Orders | One-to-Many |
+| Restaurant → Menu Items | One-to-Many |
+| Rider → Orders | One-to-Many |
+
+---
+
+# 📊 Database Statistics
+
+| Collection | Documents |
+|------------|-----------|
+| Customers | 10 |
+| Restaurants | 10 |
+| Menu Items | 15 |
+| Orders | 10 |
+| Payments | 10 |
+| Riders | 5 |
+
+### Additional Insights
+
+- Total Revenue: ₨ 8,500+
+- Delivered Orders: 7
+- Preparing Orders: 2
+- Out For Delivery Orders: 1
+- Active Customers: 10
+- Available Riders: 5
+- Restaurants Across Multiple Cities
+- Multiple Food Categories Available
+
+---
+
+# 📁 Project Structure
+
+```text
 FoodDelivery-Database/
 │
-├── README.md                          ← You are here
-├── data/                              ← JSON data files
+├── README.md
+│
+├── data/
 │   ├── customers.json
 │   ├── restaurants.json
 │   ├── menuitems.json
@@ -335,93 +336,263 @@ FoodDelivery-Database/
 │   ├── payments.json
 │   └── riders.json
 │
-├── queries/                           ← All query examples
+├── queries/
 │   ├── find_queries.txt
 │   ├── update_queries.txt
 │   ├── delete_queries.txt
 │   └── aggregate_queries.txt
 │
-├── reports/                           ← Generated reports
-│   ├── total_revenue.txt
-│   ├── orders_by_restaurant.txt
-│   ├── popular_items.txt
-│   ├── customer_spending.txt
-│   ├── payment_methods.txt
-│   ├── orders_by_status.txt
-│   └── city_analysis.txt
+├── reports/
+│   ├── revenue_report.txt
+│   ├── customer_analysis.txt
+│   ├── payment_analysis.txt
+│   ├── restaurant_analysis.txt
+│   └── order_status_report.txt
 │
-├── screenshots/                       ← Visual documentation
-│   └── [Your screenshots here]
+├── screenshots/
 │
-├── setup/                             ← Setup guides
-│   ├── mongodb_install_guide.txt
-│   └── compass_guide.txt
+├── documentation/
+│   └── project_documentation.pdf
 │
-├── documentation/                     ← Project docs
-│   └── project_overview.txt
-│
-└── .gitignore
-🎯 Why This Project is Portfolio-Ready
-Demonstrates:
-✅ Database Design - Proper schema and relationships
-✅ MongoDB Skills - Collections, documents, queries
-✅ Data Analysis - Aggregation pipelines, reports
-✅ Documentation - Professional README and guides
-✅ Organization - Clean folder structure
-✅ Real-World Data - Realistic food delivery scenario
+└── LICENSE
+```
 
-Best For:
-Junior Developer Portfolio
+---
 
-MongoDB Learning Resource
+# 🚀 Installation Guide
 
-Database Design Example
+## Step 1: Install MongoDB
 
-Interview Preparation
+Download MongoDB Community Server:
 
-Open Source Contribution
+https://www.mongodb.com/try/download/community
 
-🤝 How to Contribute
-Fork the repository
+Install using the default settings.
 
-Create your feature branch (git checkout -b feature/AmazingFeature)
+---
 
-Commit your changes (git commit -m 'Add some AmazingFeature')
+## Step 2: Install MongoDB Compass
 
-Push to the branch (git push origin feature/AmazingFeature)
+Download MongoDB Compass:
 
-Open a Pull Request
+https://www.mongodb.com/products/compass
 
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Install and launch MongoDB Compass.
 
-📞 Support
-GitHub Issues: Create an issue
+---
 
-Documentation: See documentation/ folder
+## Step 3: Connect to MongoDB
 
-Setup Help: See setup/ folder
+Connection String:
 
-⭐ Show Your Support
-If you find this project helpful:
+```text
+mongodb://localhost:27017
+```
 
-Star the repository ⭐
+Click **Connect**.
 
-Fork it for your own use
+---
 
-Share with others
+## Step 4: Create Database
 
-Contribute improvements
+```javascript
+use FoodDeliveryDB
+```
 
-Made with ❤️ for learning and portfolio
+---
 
-🔗 Quick Links
-MongoDB Documentation
+## Step 5: Import JSON Files
 
-MongoDB Compass
+Using MongoDB Compass:
 
-MongoDB University
+1. Create Collection
+2. Click Add Data
+3. Select Import JSON
+4. Choose File
+5. Import Data
 
-GitHub Guide
+Repeat for all collections.
 
-Happy Coding! 🚀
+---
+
+# 🔍 Sample Queries
+
+## Find Customers from Lahore
+
+```javascript
+db.customers.find({
+  city: "Lahore"
+})
+```
+
+---
+
+## Find Delivered Orders
+
+```javascript
+db.orders.find({
+  status: "Delivered"
+})
+```
+
+---
+
+## Find Available Riders
+
+```javascript
+db.riders.find({
+  status: "Available"
+})
+```
+
+---
+
+## Find Top Rated Restaurants
+
+```javascript
+db.restaurants.find({
+  rating: {
+    $gte: 4.5
+  }
+})
+```
+
+---
+
+# 📈 Aggregation Queries
+
+## Revenue by Restaurant
+
+```javascript
+db.orders.aggregate([
+{
+ $group:{
+   _id:"$restaurant_name",
+   totalRevenue:{
+     $sum:"$grand_total"
+   }
+ }
+}
+])
+```
+
+---
+
+## Customer Spending Analysis
+
+```javascript
+db.customers.aggregate([
+{
+ $group:{
+   _id:"$city",
+   totalSpent:{
+     $sum:"$total_spent"
+   }
+ }
+}
+])
+```
+
+---
+
+## Payment Method Analysis
+
+```javascript
+db.payments.aggregate([
+{
+ $group:{
+   _id:"$method",
+   count:{
+     $sum:1
+   }
+ }
+}
+])
+```
+
+---
+
+# 🎓 Learning Outcomes
+
+This project demonstrates:
+
+- MongoDB Fundamentals
+- NoSQL Database Design
+- Collections and Documents
+- CRUD Operations
+- Aggregation Pipelines
+- Data Modeling
+- Database Relationships
+- Report Generation
+- Database Analysis
+- Real-World Database Development
+
+---
+
+# 💼 Portfolio Benefits
+
+This project can be used for:
+
+- University Database Projects
+- Advanced Database Lab Submission
+- MongoDB Practice
+- GitHub Portfolio
+- Internship Applications
+- Entry-Level Developer Portfolio
+- Database Administrator Learning
+- NoSQL Development Practice
+
+---
+
+# 🛠 Technologies Used
+
+- MongoDB
+- MongoDB Compass
+- JSON
+- JavaScript Queries
+- NoSQL Database Architecture
+
+---
+
+# 🤝 Contribution
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
+
+**Muhammad Umar**
+
+ADP Computer Science Student
+
+Advanced Database Management System Project
+
+---
+
+# ⭐ Support
+
+If you found this project useful:
+
+⭐ Star the repository
+
+🍴 Fork the repository
+
+📢 Share with friends
+
+💡 Suggest improvements
+
+---
+<p align="center"> <b>🍔 Food Delivery Database Management System 🚀</b><br> Built with MongoDB for Learning and Practice. </p>
